@@ -45,7 +45,7 @@ public class Main {
             case 2:
                 //Metodo para actualizar
                 auto = new Auto("Mazda", "5");
-                auto.setAu_id(1L);
+                auto.setId(1L);
                 transaction = session.beginTransaction();
                 session.update(auto);
                 transaction.commit();
@@ -55,7 +55,7 @@ public class Main {
             case 3:
                 //Metodo para borrar
                 auto = new Auto("Mazda", "5");
-                auto.setAu_id(1L);
+                auto.setId(1L);
                 transaction = session.beginTransaction();
                 session.delete(auto);
                 transaction.commit();
